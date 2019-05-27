@@ -1,0 +1,121 @@
+<div class="margin uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+     uk-slideshow="autoplay: true; animation: fade; max-height: 400; min-height: 400">
+
+    <div>
+        
+    </div>
+
+    <ul class="uk-slideshow-items uk-margin-top">
+        <li>
+            <img alt="" src="https://getuikit.com/docs/images/light.jpg" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">1</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img alt="" src="https://getuikit.com/docs/images/dark.jpg" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">2</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img alt="" src="https://getuikit.com/docs/images/photo.jpg" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">3</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+       uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+       uk-slideshow-item="next"></a>
+
+    <div class="uk-position-bottom-center uk-position-small">
+        <ul class="uk-dotnav">
+            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div id="noticias" class="uk-section">
+    <div class="uk-container">
+
+        <h2>Notícias</h2>
+        <hr>
+
+        <div uk-slider="autoplay: true; center: true; index: 1">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+                <ul uk-height-match="target: > div > .uk-card" class="uk-slider-items uk-child-width-1-3@s uk-grid">
+                    <div *ngFor="let noticia of noticias">
+                            <div class="noticia uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="{{ noticia.imagem }}" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">{{ noticia.titulo }}</h3>
+                                    <p>{{ noticia.descricao}}</p>
+                                    <a target="_blank" class="uk-position-bottom-center uk-button uk-button-primary" style="margin-bottom: 1em"
+                                       href="{{ noticia.link }}">Ler</a>
+                                </div>
+                            </div>
+                    </div>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                   uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div id="publicacoes" class="uk-section">
+    <div class="uk-container">
+
+        <h2>Publicações</h2>
+        <hr>
+
+        <div uk-slider="autoplay: true; center: true; index: 1">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+                <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+                    <div *ngFor="let publicacao of publicacoes">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title uk-text-center">{{ publicacao.titulo }}</h3>
+                                    <p align="center"><span class="uk-label uk-label-danger uk-margin-small-right">{{ publicacao.label }}</span><a class="uk-button uk-button-text" href="{{ publicacao.link }}" download>{{ publicacao.descricao}}</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                   uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
+
+    </div>
+</div>

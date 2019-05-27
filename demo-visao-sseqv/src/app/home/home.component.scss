@@ -1,0 +1,19 @@
+@import "../../assets/sass/variables";
+
+.margin {
+
+    @media #{$mobile} {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    @media #{$desktop} {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    @media #{$tablet} {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}

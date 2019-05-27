@@ -1,0 +1,77 @@
+<nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m" uk-sticky="bottom: #offset">
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="" uk-toggle="target: #offcanvas-nav"></a>
+  </div>
+  <div class="uk-navbar-center">
+    <a class="uk-navbar-item uk-logo" href="#"><img style="max-height: 50px;" src="assets/video/sseqv.gif"></a>
+  </div>
+</nav>
+
+<nav class="uk-navbar-container uk-visible@m" uk-navbar uk-sticky="bottom: #offset">
+
+  <div class="uk-navbar-left">
+
+    <div class="uk-margin-large-left">
+      <a class="uk-navbar-item uk-logo" href="#"><img style="max-height: 50px;" src="assets/video/sseqv.gif"></a>
+    </div>
+
+  </div>
+
+  <div class="uk-navbar-center">
+    <div>
+      <ul class="uk-navbar-nav">
+        <li><a href="#">Início</a></li>
+        <li>
+          <a href="#">Atualidades</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="#noticias" uk-scroll>Notícias</a></li>
+              <li><a href="#publicacoes" uk-scroll>Publicações</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Ferramentas</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a target="_blank" href="../../assets/pages/demo-sseqv/index.html">Demo SSEQV</a></li>
+              <li><a target="_blank" href="https://github.com/kyriosdata/sseqv">GitHub</a></li>
+              <li><a target="_blank" href="http://pmo.institutoapoema.org">ProjeQtor</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Contato</a></li>
+        <li><a routerLink="/sobre">Sobre</a></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+
+    <ul class="uk-nav uk-nav-default">
+      <li><a href="#">Início</a></li>
+      <li class="uk-parent">
+        <a href="#">Atualidades</a>
+        <ul class="uk-nav-sub">
+          <li><a href="#noticias" uk-scroll>Notícias</a></li>
+          <li><a href="#publicacoes" uk-scroll>Publicações</a></li>
+        </ul>
+      </li>
+      <li class="uk-parent">
+        <a href="#">Ferramentas</a>
+        <ul class="uk-nav-sub">
+          <li><a target="_blank" href="../../assets/pages/demo-sseqv/index.html">Demo SSEQV</a></li>
+          <li><a target="_blank" href="https://github.com/kyriosdata/sseqv">GitHub</a></li>
+          <li><a target="_blank" href="http://pmo.institutoapoema.org">ProjeQtor</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contato</a></li>
+      <li><a routerLink="/sobre">Sobre</a></li>
+    </ul>
+
+  </div>
+</div>

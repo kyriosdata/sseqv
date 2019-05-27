@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>SSEQV - Search Engine</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" href="../../img/logo-sseqv.ico">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Bem-vindo</a></li>
+					<li><a href="#avancada">Busca Avançada</a></li>
+					<li><a href="#observatorio">Observatório de Qualidade de Vida</a></li>
+					<li><a href="#monitoramento">Monitoramento do Horizonte Tecnológico</a></li>
+					<li><a href="#comunidade">SISREBRATS Communities</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>SSEQV - Search Engine</h1>
+				<form>
+					<div class="fields">
+						<input id="input-search" type="text" placeholder="Busque aqui" />
+						<button type="submit" id="btn-search">find</button>
+					</div>
+				</form>
+				<ul class="actions">
+					<li><a href="#sobre" class="button primary scrolly">Entenda a Plataforma</a></li>
+					<li><a href="http://sseqv.institutoapoema.org/#/home" target="_blank" class="button">Sobre o
+							SSEQV</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Avancada -->
+		<section id="avancada" class="wrapper style2 fade-up">
+			<div class="inner">
+				<h1>Busca Avançada</h1>
+				<button id="cat1" class="categoria categoria-active" onclick="active('cat1')">Bases Acadêmicas</button>
+				<button id="cat2" class="categoria" onclick="active('cat2')">Bases Científicas</button>
+				<button id="cat3" class="categoria" onclick="active('cat3')">Bases Acadêmicas e Científicas</button>
+				<div class="features">
+					<section>
+						<form method="post" action="#">
+							<div class="row gtr-uniform">
+								<div class="col-12">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Título" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="demo-email" id="demo-email" value="" placeholder="Autor" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="demo-email" id="demo-email" value=""
+										placeholder="Ano de Publicação" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<select name="demo-category" id="demo-category">
+										<option disabled selected value="">Status</option>
+										<option value="1">Em Andamento</option>
+										<option value="1">Interrompido</option>
+										<option value="1">Concluído</option>
+									</select>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<select name="demo-category" id="demo-category">
+										<option disabled selected value="">Situação</option>
+										<option value="1">Em Análise</option>
+										<option value="1">Homologado</option>
+									</select>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<select name="demo-category" id="demo-category">
+										<option disabled selected value="">Idioma</option>
+										<option value="1">Português</option>
+										<option value="1">Inglês</option>
+										<option value="1">Espanhol</option>
+									</select>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<select name="demo-category" id="demo-category">
+										<option disabled selected value="">Instituição Responsável</option>
+										<option value="1">Instituição 1</option>
+										<option value="1">Instituição 2</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Buscar" class="primary btn-green" /></li>
+										<li><input type="reset" value="Resetar" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Observatório -->
+		<section id="observatorio" class="wrapper style2 fade-up">
+			<div class="inner">
+				<h1>Observatório de Qualidade de Vida</h1>
+			</div>
+		</section>
+
+		<!-- Monitoramento -->
+		<section id="monitoramento" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h1>Monitoramento do Horizonte Tecnológico</h1>
+			</div>
+		</section>
+
+		<!-- Comunidade -->
+		<section id="comunidade" class="wrapper style2 fade-up">
+			<div class="inner">
+				<h1>SISREBRATS Communities</h1>
+			</div>
+		</section>
+
+		<!-- 
+		<section id="sobre" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Sed ipsum dolor</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+							erat malesuada quis. Aliquam dapibus.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Feugiat consequat</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+							erat malesuada quis. Aliquam dapibus.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Ultricies aliquam</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+							erat malesuada quis. Aliquam dapibus.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section> -->
+
+		<!-- Contato -->
+		<section id="contato" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in touch</h2>
+				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
+					imperdiet est velit quis lorem.</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><a href="" class="button submit">Send Message</a></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<span>12345 Somewhere Road #654<br />
+									Nashville, TN 00000-0000<br />
+									USA</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="#">user@untitled.tld</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<span>(000) 000-0000</span>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Instituto Apoema. Todos os Direitos Reservados.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

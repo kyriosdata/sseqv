@@ -1,0 +1,21 @@
+@import '../../assets/sass/variables';
+
+.uk-list {
+    a {
+        color: #666;
+    }
+}
+
+.apoema {
+    max-width: 18rem;
+    @media #{$mobile} {
+        max-width: 6rem;
+    }
+}
+
+.ms, .fns {
+    max-width: 6em;
+    @media #{$mobile} {
+        max-width: 3em;
+    }
+}
