@@ -36,6 +36,57 @@ ol, ul {
 	list-style: none;
 }
 
+#titulo {
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 0.8em !important;
+	color: whitesmoke;
+	letter-spacing: 1px;
+}
+
+#logo-sseqv {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+/* Flex */
+
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+  }
+  
+  .flex-start { 
+	justify-content: flex-start; 
+  }
+  
+  .flex-end { 
+	justify-content: flex-end; 
+  }  
+  
+  .center { 
+	justify-content: center; 
+  }  
+
+  #diretrizes label {
+	  min-width: 245px;
+  }
+  
+  .space-between { 
+	justify-content: space-between; 
+  }  
+  
+  .space-around { 
+	justify-content: space-around; 
+  }
+  
+  .space-evenly { 
+	justify-content: space-evenly; 
+  }
+
 blockquote, q {
 	quotes: none;
 }
@@ -2006,10 +2057,12 @@ input, select, textarea {
 
 .categoria {
 	border-radius: 10px;
-	margin-bottom: 0px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
-}
+	font-size: 10px;
+	}
 
 .categoria-active {
 	background-color: #2a2c30;
@@ -3545,7 +3598,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: whitesmoke;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3889,6 +3942,10 @@ input, select, textarea {
 				display: none;
 			}
 
+		}
+
+		.scrolly {
+			color: #312450 !important;
 		}
 
 /* Intro */

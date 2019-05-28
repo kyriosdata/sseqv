@@ -10,7 +10,21 @@ function active(string) {
 	})
 	var element = document.getElementById(string);
 	element.classList.add("categoria-active");
+
+	if(string == "cat-dir") {
+		showDiretrizes(true);
+	} else {
+		showDiretrizes(false);
+	}
 	
+}
+
+function showDiretrizes(boleano) {
+	if(boleano) {
+		document.getElementById("diretrizes").style.display = "block";
+	} else {
+		document.getElementById("diretrizes").style.display = "none";
+	}
 }
 
 (function ($) {

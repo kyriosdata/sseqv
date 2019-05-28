@@ -21,13 +21,14 @@
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
+			<img id="logo-sseqv" width="200" src="../../video/sseqv.gif">
 			<nav>
 				<ul>
 					<li><a href="#intro">Bem-vindo</a></li>
 					<li><a href="#avancada">Busca Avançada</a></li>
 					<li><a href="#observatorio">Observatório de Qualidade de Vida</a></li>
 					<li><a href="#monitoramento">Monitoramento do Horizonte Tecnológico</a></li>
-					<li><a href="#comunidade">SISREBRATS Communities</a></li>
+					<li><a href="#comunidade">Comunidade SSEQV</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
@@ -40,16 +41,19 @@
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>SSEQV - Search Engine</h1>
+				<p>Visão geral do Protótipo de um sistema para captação, avaliação, armazenamento e disponibilização de
+					estudos sobre qualidade de vida, devidamente indexados, com o propósito de facilitar a localização
+					dos mesmos pelas partes interessadas na incorporação de tecnologias no âmbito do SUS.</p>
+				<p id="titulo">Academic and Scientific Healthcare Search</p>
 				<form>
 					<div class="fields">
 						<input id="input-search" type="text" placeholder="Busque aqui" />
-						<button type="submit" id="btn-search">find</button>
+						<button type="submit" id="btn-search">Buscar</button>
 					</div>
 				</form>
 				<ul class="actions">
-					<li><a href="#sobre" class="button primary scrolly">Entenda a Plataforma</a></li>
-					<li><a href="http://sseqv.institutoapoema.org/#/home" target="_blank" class="button">Sobre o
+					<li><a class="button primary scrolly" href="http://sseqv.institutoapoema.org/#/sobre"
+							target="_blank" class="button">Sobre o
 							SSEQV</a></li>
 				</ul>
 			</div>
@@ -59,9 +63,12 @@
 		<section id="avancada" class="wrapper style2 fade-up">
 			<div class="inner">
 				<h1>Busca Avançada</h1>
-				<button id="cat1" class="categoria categoria-active" onclick="active('cat1')">Bases Acadêmicas</button>
-				<button id="cat2" class="categoria" onclick="active('cat2')">Bases Científicas</button>
-				<button id="cat3" class="categoria" onclick="active('cat3')">Bases Acadêmicas e Científicas</button>
+				<button id="cat-ba" class="categoria categoria-active" onclick="active('cat-ba')">Bases
+					Acadêmicas</button>
+				<button id="cat-bc" class="categoria" onclick="active('cat-bc')">Bases Científicas</button>
+				<button id="cat-babc" class="categoria" onclick="active('cat-babc')">Bases Acadêmicas e
+					Científicas</button>
+				<button id="cat-dir" class="categoria" onclick="active('cat-dir')">Diretrizes Metodológicas</button>
 				<div class="features">
 					<section>
 						<form method="post" action="#">
@@ -106,6 +113,44 @@
 										<option value="1">Instituição 2</option>
 									</select>
 								</div>
+								<div id="diretrizes" style="display: none">
+									<div class="col-12">
+										<label>Tipos de estudo em ATS</label>
+										<!-- opções -->
+										<input type="checkbox" id="perecer" name="perecer">
+										<label for="perecer">parecer técnico-científco (PTC) e nota técnica de
+											revisão
+											rápida (NTRR)</label>
+										<input type="checkbox" id="rev-sis" name="rev-sis">
+										<label for="rev-sis">revisão sistemática</label>
+										<br>
+										<input type="checkbox" id="rev-rev" name="rev-rev">
+										<label for="rev-rev">revisão de revisões sistemáticas (RRS)</label>
+										<input type="checkbox" id="analise" name="analise">
+										<label for="analise">análise econômica em saúde (AES) e análise de impacto
+											orçamentário (AIO)</label>
+										<input type="checkbox" id="ava" name="ava">
+										<label for="ava">avaliação e adaptação de diretrizes clínicas</label>
+									</div>
+									<div class="col-12"><label>Cenários de aplicação</label></div>
+									<!-- opções -->
+									<div class="col-6">
+										<input type="checkbox" id="promocao" name="promocao">
+										<label for="promocao">promoção de saúde</label>
+										<input type="checkbox" id="prevencao" name="prevencao">
+										<label for="prevencao">prevenção de doenças</label>
+										<input type="checkbox" id="reducao" name="reducao">
+										<label for="reducao">redução de danos</label>
+									</div>
+									<div class="col-6">
+										<input type="checkbox" id="diag" name="diag">
+										<label for="diag">diagnóstico e tratamento</label>
+										<input type="checkbox" id="reabilitacao" name="reabilitacao">
+										<label for="reabilitacao">reabilitação</label>
+										<input type="checkbox" id="cuidados" name="cuidados">
+										<label for="cuidados">cuidados paliativos</label>
+									</div>
+								</div>
 								<div class="col-12">
 									<ul class="actions">
 										<li><input type="submit" value="Buscar" class="primary btn-green" /></li>
@@ -136,7 +181,7 @@
 		<!-- Comunidade -->
 		<section id="comunidade" class="wrapper style2 fade-up">
 			<div class="inner">
-				<h1>SISREBRATS Communities</h1>
+				<h1>Comunidade SSEQV</h1>
 			</div>
 		</section>
 
