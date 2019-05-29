@@ -36,6 +36,20 @@ ol, ul {
 	list-style: none;
 }
 
+.link {
+	font-weight: bold;
+	text-decoration-line: underline;
+	border: none;
+}
+
+.titulo {
+	font-size: 2.5em;
+}
+
+p {
+	text-align: justify;
+}
+
 #titulo {
 	margin-bottom: 30px;
 	font-weight: bold;
@@ -72,7 +86,7 @@ ol, ul {
   }  
 
   #diretrizes label {
-	  min-width: 245px;
+	  min-width: 18.5vw;
   }
   
   .space-between { 
