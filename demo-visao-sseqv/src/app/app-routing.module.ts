@@ -21,6 +21,10 @@ const routes: Routes = [{
 {
   path: 'forum',
   loadChildren: './forum/forum.module#ForumModule'
+},
+{
+  path: '**',
+  component: HomeComponent
 }
 ];
 
