@@ -17,6 +17,10 @@ const routes: Routes = [{
 {
   path: 'sobre',
   component: SobreComponent
+},
+{
+  path: 'forum',
+  loadChildren: './forum/forum.module#ForumModule'
 }
 ];
 

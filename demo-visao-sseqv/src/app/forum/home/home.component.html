@@ -1,0 +1,140 @@
+<div class="home-page">
+
+  <div class="banner">
+    <div class="container">
+      <h1 class="logo-font">forum</h1>
+      <p>Comunidade SSEQV</p>
+    </div>
+  </div>
+
+  <div class="container page">
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="feed-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{'active': listType === 'feed'}" (click)="setListTo('feed')">
+                Suas Publicações
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{'active': listType === 'all'}" (click)="setListTo('all')">
+                Publicações Globais
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="article-preview">
+
+          <div class="article-meta">
+            <a>
+              <img src="../../../assets/img/eliomar.png" />
+            </a>
+
+            <div class="info">
+              <a href="#" class="author">
+                Eliomar Araújo
+              </a>
+              <span class="date">
+                31, Maio 2019
+              </span>
+            </div>
+
+            <button class="btn btn-sm btn-outline-primary pull-xs-right" (click)="toggleFavorite()">
+              <i class="ion-heart"></i> 0
+            </button>
+
+          </div>
+
+          <a class="preview-link" [routerLink]="['/forum/article', 'Saúde e Qualidade de Vida']">
+            <h1>Saúde e Qualidade de Vida</h1>
+            <p>Abrindo uma discussão sobre qualidade de vida...</p>
+            <span>Leia mais...</span>
+            <ul class="tag-list">
+              <li class="tag-default tag-pill tag-outline">
+                saude
+              </li>
+              <li class="tag-default tag-pill tag-outline">
+                qualidade
+              </li>
+              <li class="tag-default tag-pill tag-outline">
+                vida
+              </li>
+            </ul>
+          </a>
+        </div>
+
+
+        <div class="article-preview" *ngIf="listType === 'all'">
+
+          <div class="article-meta">
+            <a>
+              <img src="../../../assets/img/hyago.jpg" />
+            </a>
+
+            <div class="info">
+              <a href="#" class="author">
+                Hyago Souza
+              </a>
+              <span class="date">
+                30, Maio 2019
+              </span>
+            </div>
+
+            <button class="btn btn-sm btn-outline-primary pull-xs-right" (click)="toggleFavorite()">
+              <i class="ion-heart"></i> 1
+            </button>
+          </div>
+
+          <a class="preview-link" [routerLink]="['/forum/article', 'Saúde e Qualidade de Vida']">
+            <h1>Sistema Público de Saúde</h1>
+            <p>Abrindo uma discussão sobre o sistema público de saúde brasileiro...</p>
+            <span>Leia mais...</span>
+            <ul class="tag-list">
+              <li class="tag-default tag-pill tag-outline">
+                saude
+              </li>
+              <li class="tag-default tag-pill tag-outline">
+                sus
+              </li>
+              <li class="tag-default tag-pill tag-outline">
+                publica
+              </li>
+            </ul>
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-md-3">
+        <div class="sidebar">
+          <p>Tags Populares</p>
+
+          <div class="tag-list">
+            <a class="tag-default tag-pill">
+              saude
+            </a>
+            <a class="tag-default tag-pill">
+              vida
+            </a>
+            <a class="tag-default tag-pill">
+              qualidade
+            </a>
+            <a class="tag-default tag-pill">
+              publica
+            </a>
+            <a class="tag-default tag-pill">
+              sus
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

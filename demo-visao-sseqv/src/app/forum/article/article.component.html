@@ -1,0 +1,110 @@
+<div class="article-page">
+
+  <div class="banner">
+    <div class="container">
+      <h1>{{ nome }}</h1>
+
+
+      <div class="article-meta">
+        <a>
+          <img src="../../../assets/img/eliomar.png" />
+        </a>
+
+        <div class="info">
+          <a href="#" class="author">
+            Eliomar Araújo
+          </a>
+          <span class="date">
+            31, Maio 2019
+          </span>
+        </div>
+
+        <button class="btn btn-sm action-btn btn-outline-secondary" (click)="toggleFollowing()">
+          <i class="ion-plus-round"></i>
+          &nbsp;
+          Seguir Eliomar Araújo
+        </button>
+
+        &nbsp;
+        <button class="btn btn-sm btn-outline-primary" (click)="toggleFavorite()">
+          <i class="ion-heart"></i> Favorite este Post 0
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container page">
+
+    <div class="row article-content">
+      <div class="col-md-12">
+
+        <div>
+          <p>Abrindo uma discussão sobre qualidade de vida...</p>
+        </div>
+
+        <ul class="tag-list">
+          <li class="tag-default tag-pill tag-outline">
+            saude
+          </li>
+          <li class="tag-default tag-pill tag-outline">
+            qualidade
+          </li>
+          <li class="tag-default tag-pill tag-outline">
+            vida
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-xs-12 col-md-8 offset-md-2">
+        <div class="card">
+          <div class="card-block">
+            <p class="card-text">
+              Todos deveriam participar desta discussão.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a class="comment-author" href="#">
+              <img src="../../../assets/img/hernane.png" class="comment-author-img" />
+            </a>
+            &nbsp;
+            <a class="comment-author" href="#">
+              Hernane Oliveira
+            </a>
+            <span class="date-posted">
+              31, Maio 2019
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+              <p class="card-text">
+                Vamos lá.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="comment-author" href="#">
+                <img src="../../../assets/img/fabio.png" class="comment-author-img" />
+              </a>
+              &nbsp;
+              <a class="comment-author" href="#">
+                Fábio Nogueira
+              </a>
+              <span class="date-posted">
+                31, Maio 2019
+              </span>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
