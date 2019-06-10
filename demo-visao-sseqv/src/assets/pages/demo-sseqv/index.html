@@ -283,49 +283,49 @@
 		</section> -->
 
 		<!-- Contato -->
-		<section id="contato" class="wrapper style1 fade-up">
+		<section id="contato" class="wrapper style2 fade-up">
 			<div class="inner">
-				<h2>Get in touch</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
-					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-					imperdiet est velit quis lorem.</p>
+				<h2>Contato</h2>
 				<div class="split style1">
 					<section>
-						<form method="post" action="#">
+						<form id="myform" method="post">
 							<div class="fields">
 								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<label for="name">Nome</label>
+									<input type="text" name="nome" id="nome" required />
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="text" name="email" id="email" required />
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<label for="message">Mensagem</label>
+									<textarea name="mensagem" id="mensagem" rows="5" required></textarea>
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit">Send Message</a></li>
+								<li><a href="" class="button submit">Enviar mensagem</a></li>
 							</ul>
 						</form>
+						<div id="card-feeback">
+							<p id="feedback-form"></p>
+						</div>
 					</section>
 					<section>
 						<ul class="contact">
 							<li>
-								<h3>Address</h3>
-								<span>12345 Somewhere Road #654<br />
-									Nashville, TN 00000-0000<br />
-									USA</span>
+								<h3>Endereço</h3>
+								<span>Alameda Palmeiras, Quadra D, Câmpus Samambaia <br />
+									Instituto de Informática (INF) - UFG, Sala 244<br />
+									Goiânia - GO</span>
 							</li>
 							<li>
 								<h3>Email</h3>
-								<a href="#">user@untitled.tld</a>
+								<a href="#">apoema@inf.ufg.br</a>
 							</li>
 							<li>
 								<h3>Phone</h3>
-								<span>(000) 000-0000</span>
+								<span>+55 (62) 3521-1724 </span>
 							</li>
 							<li>
 								<h3>Social</h3>
@@ -362,6 +362,36 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_JTOyI3b3OleDuAyrTDZGG");
+		})();
+	</script>
+	<script type="text/javascript">
+		var myform = $("form#myform");
+		myform.submit(function (event) {
+			event.preventDefault();
+
+			// Change to your service ID, or keep using the default service
+			var service_id = "default_service";
+			var template_id = "template_ugBJDSUe";
+
+			document.getElementById("card-feeback").style.display = "block";
+			document.getElementById("feedback-form").innerText = "Enviando contato...";
+			emailjs.sendForm(service_id, template_id, myform[0])
+				.then(function () {
+					document.getElementById("card-feeback").style.backgroundColor = "green";
+					document.getElementById("feedback-form").innerText = "Formulário enviado!";
+					document.getElementById("myform").reset();
+				}, function (err) {
+					document.getElementById("card-feeback").style.backgroundColor = "red";
+					document.getElementById("feedback-form").innerText = "Houve um erro ao enviar seu contato. Por favor, tente novamente!";
+				});
+			return false;
+		});
+	</script>
 
 </body>
 
